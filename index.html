@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Footer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-li">
+          <img class="logo" src="images/logo.png" alt="logo página" />
+        </div>
+        <div class="hamburguesa-li">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+
+      <div id="menu" class="menu oculto">
+        <a href="#productos" onclick="cerrarMenu()">Productos</a>
+        <a href="#bio" onclick="cerrarMenu()">Bio</a>
+        <a href="#cesta" onclick="cerrarMenu()">Cesta de la compra</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+      </div>
+    </nav>
+
+    <section id="productos" class="productos">
+      <div class="contenedor-productos">
+        <div class="tarjeta-producto">
+          <img src="images/adidas-1.png" alt="Zapatillas adidas rojas" />
+          <h3 class="titulo-producto">Zapatillas adidas rojas</h3>
+          <p class="precio-producto">59,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/adidas-2.png" alt="Zapatillas adidas azul" />
+          <h3 class="titulo-producto">Zapatillas adidas azul</h3>
+          <p class="precio-producto">62,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-1.png" alt="Air Jordan rojas" />
+          <h3 class="titulo-producto">Air Jordan rojas</h3>
+          <p class="precio-producto">109,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-2.png" alt="Air Jordan naranjas" />
+          <h3 class="titulo-producto">Air Jordan naranjas</h3>
+          <p class="precio-producto">104,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-3.png" alt="Air Jordan rojas y negras" />
+          <h3 class="titulo-producto">Air Jordan rojas y negras</h3>
+          <p class="precio-producto">114,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-4.png" alt="Air Jordan rojas y blancas" />
+          <h3 class="titulo-producto">Air Jordan rojas y blancas</h3>
+          <p class="precio-producto">117,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-5.png" alt="Air Jordan azules y negras" />
+          <h3 class="titulo-producto">Air Jordan azules y negras</h3>
+          <p class="precio-producto">112,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/fila-1.png" alt="Fila blancas" />
+          <h3 class="titulo-producto">Fila blancas</h3>
+          <p class="precio-producto">54,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/fila-2.webp" alt="Fila altas" />
+          <h3 class="titulo-producto">Fila altas</h3>
+          <p class="precio-producto">59,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/puma-1.png" alt="Puma azul" />
+          <h3 class="titulo-producto">Puma azul</h3>
+          <p class="precio-producto">49,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/nike-1.jpg" alt="Nike blancas" />
+          <h3 class="titulo-producto">Nike blancas</h3>
+          <p class="precio-producto">79,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/puma-2.png" alt="Puma blancas" />
+          <h3 class="titulo-producto">Puma blancas</h3>
+          <p class="precio-producto">47,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/adidas-1.png" alt="Zapatillas adidas rojas" />
+          <h3 class="titulo-producto">Zapatillas adidas rojas</h3>
+          <p class="precio-producto">59,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/adidas-2.png" alt="Zapatillas adidas azul" />
+          <h3 class="titulo-producto">Zapatillas adidas azul</h3>
+          <p class="precio-producto">62,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-1.png" alt="Air Jordan rojas" />
+          <h3 class="titulo-producto">Air Jordan rojas</h3>
+          <p class="precio-producto">109,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-2.png" alt="Air Jordan naranjas" />
+          <h3 class="titulo-producto">Air Jordan naranjas</h3>
+          <p class="precio-producto">104,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-3.png" alt="Air Jordan rojas y negras" />
+          <h3 class="titulo-producto">Air Jordan rojas y negras</h3>
+          <p class="precio-producto">114,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-4.png" alt="Air Jordan rojas y blancas" />
+          <h3 class="titulo-producto">Air Jordan rojas y blancas</h3>
+          <p class="precio-producto">117,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/air-5.png" alt="Air Jordan azules y negras" />
+          <h3 class="titulo-producto">Air Jordan azules y negras</h3>
+          <p class="precio-producto">112,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/fila-1.png" alt="Fila blancas" />
+          <h3 class="titulo-producto">Fila blancas</h3>
+          <p class="precio-producto">54,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/fila-2.webp" alt="Fila altas" />
+          <h3 class="titulo-producto">Fila altas</h3>
+          <p class="precio-producto">59,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/puma-1.png" alt="Puma azul" />
+          <h3 class="titulo-producto">Puma azul</h3>
+          <p class="precio-producto">49,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/nike-1.jpg" alt="Nike blancas" />
+          <h3 class="titulo-producto">Nike blancas</h3>
+          <p class="precio-producto">79,99 €</p>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="images/puma-2.png" alt="Puma blancas" />
+          <h3 class="titulo-producto">Puma blancas</h3>
+          <p class="precio-producto">47,99 €</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio" class="bio">
+      <article class="bio-article">
+        <div class="bio-card">
+          <img
+            id="bioImagen"
+            class="bio-imagen"
+            src="images/tienda.jpg"
+            alt="Imagen tienda"
+          />
+
+          <div class="bio-info">
+            <h1>Bienvenido a Footer:</h1>
+            <p>
+              Ofrecemos una amplia variedad de modelos deportivos, urbanos y
+              clásicos de las mejores marcas. Encuentra el estilo que va
+              contigo, con la comodidad y calidad que buscas. Nuestra selección
+              está pensada para todos los gustos y necesidades: desde zapatillas
+              para el día a día, hasta modelos exclusivos para ocasiones
+              especiales. Combinamos diseño, funcionalidad y las últimas
+              tendencias para que encuentres exactamente lo que necesitas sin
+              renunciar al confort.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="cesta" class="cesta">
+      <div class="container-cesta">
+        <h2>Cesta de la compra</h2>
+        <p>Aquí aparecerán los productos que agregues a tu carrito.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container-contacto">
+        <ul class="formulario-contacto">
+          <h2 class="texto-form">Formulario de contacto:</h2>
+
+          <li>
+            <label class="texto-form" for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" required />
+          </li>
+
+          <li>
+            <label class="texto-form" for="email">Correo electrónico:</label
+            ><br />
+            <input type="email" id="email" name="email" required />
+          </li>
+
+          <li>
+            <label class="texto-form" for="mensaje">Mensaje:</label><br />
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </li>
+
+          <li>
+            <button type="submit">Enviar</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Juan Pedro Gómez Espinosa ©2025</p>
+      <br />
+    </footer>
+
+    <div class="boton-inicio">
+      <button id="scrollTopBtn" onclick="scrollToTop()">👆</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="producto.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-li">
+          <img class="logo" src="../images/logo.png" alt="logo página" />
+        </div>
+        <div class="hamburguesa-li">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+
+      <div id="menu" class="menu oculto">
+        <a href="#productos" onclick="cerrarMenu()">Productos</a>
+        <a href="#bio" onclick="cerrarMenu()">Bio</a>
+        <a href="#cesta" onclick="cerrarMenu()">Cesta de la compra</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+      </div>
+    </nav>
+
+    <main class="producto-container">
+      <div class="tarjeta-unificada">
+        <div class="imagen-producto">
+          <img src="../images/adidas-1.png" alt="Zapatillas adidas rojas" />
+        </div>
+
+        <div class="detalle-producto">
+          <h1>Zapatillas Adidas Rojas</h1>
+          <p class="precio-producto">59,99 €</p>
+
+          <p class="descripcion">
+            Estas zapatillas Adidas combinan estilo y comodidad. Fabricadas con
+            materiales de alta calidad, son ideales tanto para el uso diario
+            como para entrenamientos ligeros. Su color rojo vibrante destaca en
+            cualquier conjunto.
+          </p>
+
+          <label for="talla">Selecciona tu talla:</label>
+          <select id="talla" name="talla">
+            <option value="">-- Selecciona --</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+          </select>
+
+          <div class="acciones">
+            <button class="comprar">Comprar ahora</button>
+            <button class="añadir-cesta">Añadir a la cesta</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Juan Pedro Gómez Espinosa ©2025</p>
+      <br />
+    </footer>
+
+    <script src="producto.js"></script>
+  </body>
+</html>

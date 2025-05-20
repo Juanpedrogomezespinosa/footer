@@ -353,7 +353,7 @@ body {
 }
 
 .boton-inicio button {
-  background-color: #e1ce7a;
+  background-color: #754f44;
   border: none;
   border-radius: 50%;
   padding: 10px 15px;
@@ -364,7 +364,7 @@ body {
 }
 
 .boton-inicio button:hover {
-  background-color: #cbbd5e;
+  background-color: #9e6e61;
 }
 
 /* Estilos del footer */

@@ -39,6 +39,7 @@ body {
 }
 
 .menu {
+  margin-right: 3.5rem;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -64,6 +65,7 @@ body {
 }
 
 .oculto {
+  margin-right: 1rem;
   display: none;
 }
 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="carruselPago.css" />
+    <title>Carrusel de Pago</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-li">
+          <img class="logo" src="../images/logo.png" alt="logo página" />
+        </div>
+        <div class="hamburguesa-li">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+
+      <div id="menu" class="menu oculto">
+        <a href="#productos" onclick="cerrarMenu()">Productos</a>
+        <a href="#bio" onclick="cerrarMenu()">Bio</a>
+        <a href="#cesta" onclick="cerrarMenu()">Cesta de la compra</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="carrusel-pago">
+      <form id="form-pago">
+        <div class="paso paso-activo" data-paso="1">
+          <h2>Datos de envío</h2>
+          <label>
+            Nombre completo
+            <input type="text" name="nombre" required />
+          </label>
+          <label>
+            Dirección
+            <input type="text" name="direccion" required />
+          </label>
+          <label>
+            Ciudad
+            <input type="text" name="ciudad" required />
+          </label>
+          <label>
+            Código Postal
+            <input
+              type="text"
+              name="codigo_postal"
+              required
+              pattern="\d{5}"
+              title="5 dígitos"
+            />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+        </div>
+
+        <div class="paso" data-paso="2">
+          <h2>Método de pago</h2>
+          <label>
+            Tipo de Tarjeta
+            <select name="tipo_tarjeta" required>
+              <option value="">Seleccione</option>
+              <option value="visa">Visa</option>
+              <option value="mastercard">MasterCard</option>
+              <option value="amex">American Express</option>
+            </select>
+          </label>
+          <label>
+            Número de Tarjeta
+            <input
+              type="text"
+              name="numero_tarjeta"
+              required
+              pattern="\d{16}"
+              maxlength="16"
+              placeholder="1234 5678 9012 3456"
+            />
+          </label>
+          <label>
+            Fecha de Expiración
+            <input
+              type="text"
+              name="expiracion"
+              required
+              placeholder="MM/AA"
+              pattern="(0[1-9]|1[0-2])\/\d{2}"
+              title="Formato MM/AA"
+            />
+          </label>
+          <label>
+            CVV
+            <input
+              type="number"
+              name="cvv"
+              required
+              min="100"
+              max="999"
+              placeholder="123"
+            />
+          </label>
+        </div>
+
+        <div class="paso" data-paso="3">
+          <h2>Confirmación</h2>
+          <p>Revisa todos tus datos antes de confirmar la compra.</p>
+          <div id="resumen-compra">
+            <!-- Aquí se genera dinámicamente el resumen desde JS -->
+          </div>
+        </div>
+
+        <div class="botones-navegacion">
+          <button type="button" id="prev-btn" disabled>Anterior</button>
+          <button type="button" id="next-btn">Siguiente</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>Juan Pedro Gómez Espinosa ©2025</p>
+      <br />
+    </footer>
+    <script src="carruselPago.js"></script>
+  </body>
+</html>

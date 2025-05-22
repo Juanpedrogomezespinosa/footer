@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cesta.css" />
+    <title>Cesta de la compra</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-li">
+          <img class="logo" src="../images/logo.png" alt="logo página" />
+        </div>
+        <div class="hamburguesa-li">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+
+      <div id="menu" class="menu oculto">
+        <a href="#productos" onclick="cerrarMenu()">Productos</a>
+        <a href="#bio" onclick="cerrarMenu()">Bio</a>
+        <a href="#cesta" onclick="cerrarMenu()">Cesta de la compra</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Tu cesta de la compra</h1>
+      <form id="carrito-form" class="carrito-contenedor">
+        <ul class="lista-productos">
+          <!-- Productos -->
+          <li class="producto">
+            <label>
+              <input type="checkbox" class="seleccionar-producto" checked />
+              <div class="imagen-producto">
+                <img
+                  src="../images/adidas-1.png"
+                  alt="Zapatillas Adidas Rojas"
+                />
+              </div>
+              <div class="info-producto">
+                <span class="titulo-producto">Zapatillas Adidas Rojas</span>
+                <span class="precio-producto" data-precio="59.99"
+                  >59,99&nbsp;€</span
+                >
+                <input
+                  type="number"
+                  class="cantidad-producto"
+                  min="1"
+                  value="1"
+                />
+              </div>
+            </label>
+          </li>
+          <li class="producto">
+            <label>
+              <input type="checkbox" class="seleccionar-producto" checked />
+              <div class="imagen-producto">
+                <img
+                  src="../images/adidas-2.png"
+                  alt="Zapatillas Adidas Azules"
+                />
+              </div>
+              <div class="info-producto">
+                <span class="titulo-producto">Zapatillas Adidas Azules</span>
+                <span class="precio-producto" data-precio="69.99"
+                  >69,99&nbsp;€</span
+                >
+                <input
+                  type="number"
+                  class="cantidad-producto"
+                  min="1"
+                  value="1"
+                />
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <div class="resumen-comprar">
+          <div class="resumen">
+            <div>
+              <span>Subtotal:</span>
+              <span id="subtotal">0,00&nbsp;€</span>
+            </div>
+            <div>
+              <span>Impuestos (21%):</span>
+              <span id="impuestos">0,00&nbsp;€</span>
+            </div>
+            <div class="total">
+              <span>Total con impuestos:</span>
+              <span id="total">0,00&nbsp;€</span>
+            </div>
+          </div>
+
+          <button id="boton-comprar" type="submit" disabled>Comprar ya</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Juan Pedro Gómez Espinosa ©2025</p>
+      <br />
+    </footer>
+    <script src="cesta.js"></script>
+  </body>
+</html>
